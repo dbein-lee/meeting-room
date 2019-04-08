@@ -1,0 +1,40 @@
+HELP.md
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+/.idea/*.xml
+/.idea/dictionaries/*.xml
+/.idea/inspectionProfiles/*.xml
+/.idea/libraries/*.xml
+/.idea/*.iml
+/meeting/.mvn/wrapper/MavenWrapperDownloader.java
+/meeting/.mvn/wrapper/maven-wrapper.jar
+/meeting/.mvn/wrapper/maven-wrapper.properties
+/meeting/mvnw
+/meeting/mvnw.cmd
+/meeting/.mvn/wrapper
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/

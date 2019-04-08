@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /meeting
+spring:
+  application:
+    name: meeting
+  datasource:
+    name: meeting
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      filter: stat
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/meeting?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root
+      password: 123456
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      #一个链接在连接池中最小存在时间
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      #打开预编译缓存,mysql5.5后支持游标 oracle支持游标,可以打开
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: 20
+
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+  type-aliases-package: com.anony.meeting.entity
+
